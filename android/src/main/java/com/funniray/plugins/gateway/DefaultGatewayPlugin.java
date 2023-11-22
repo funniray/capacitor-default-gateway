@@ -80,6 +80,10 @@ public class DefaultGatewayPlugin extends Plugin {
                     .put("gateway", gateway.getHostAddress())
                     .put("version", version)
                     .put("int", link.getInterfaceName()));
+
+            return;
         }
+
+        call.resolve();
     }
 }
