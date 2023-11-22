@@ -1,0 +1,72 @@
+{
+  "api": {
+    "name": "DefaultGatewayPlugin",
+    "slug": "defaultgatewayplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "gateway4async",
+        "signature": "() => Promise<Result<4>>",
+        "parameters": [],
+        "returns": "Promise<Result<4>>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "Result"
+        ],
+        "slug": "gateway4async"
+      },
+      {
+        "name": "gateway6async",
+        "signature": "() => Promise<Result<6>>",
+        "parameters": [],
+        "returns": "Promise<Result<6>>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "Result"
+        ],
+        "slug": "gateway6async"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "Result",
+      "slug": "result",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "gateway",
+          "tags": [],
+          "docs": "The IP address of the default gateway.",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "version",
+          "tags": [],
+          "docs": "The IP address version of `gateway`.",
+          "complexTypes": [
+            "Family"
+          ],
+          "type": "Family"
+        },
+        {
+          "name": "int",
+          "tags": [],
+          "docs": "Name of the interface.\nOn Windows, this is the network adapter name.\nThis can be `null` if it cannot be determined.",
+          "complexTypes": [],
+          "type": "string | null"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
